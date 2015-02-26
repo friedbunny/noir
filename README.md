@@ -19,7 +19,7 @@ var map = new mapboxgl.Map({
 
 [Interactive example with Mapbox GL.](https://friedbunny.github.io/mapbox-gl-style-dark/example.html)
 
-This style is meant primarily to be used as a basis for overlays, rather than detailed wayfinding.
+This style is meant primarily to be used as a base for overlays, rather than detailed wayfinding.
 
 ![alt text](example.jpg "Rides overlayed on Portland, Oregon")
 
