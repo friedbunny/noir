@@ -47,7 +47,7 @@
       "maxZoom": 15
     }
   },
-  "sprite": "sprites/dark",
+  "sprite": "//friedbunny.github.io/mapbox-gl-style-dark/sprites/dark",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",
