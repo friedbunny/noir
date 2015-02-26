@@ -4,6 +4,8 @@ For use with some implementation of [Mapbox GL](https://www.mapbox.com/mapbox-gl
 
 ## Usage
 
+Javascript:
+
 ```
 var map = new mapboxgl.Map({
   container: 'map', 
