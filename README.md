@@ -19,7 +19,7 @@ var map = new mapboxgl.Map({
 
 This style is meant primarily to be used as a basis for overlays, rather than detailed wayfinding.
 
-![alt text](./example/example.jpg "Usage")
+![alt text](example.jpg "Rides overlayed on Portland, Oregon")
 
 ## Label Language
 
