@@ -7,7 +7,7 @@ For use with some implementation of [Mapbox GL](https://www.mapbox.com/mapbox-gl
 ```
 var map = new mapboxgl.Map({
   container: 'map', 
-  style: 'https://cdn.rawgit.com/friedbunny/mapbox-gl-style-dark/master/dark-v7.json',
+  style: 'https://friedbunny.github.io/mapbox-gl-style-dark/dark-v7.json',
   center: [45.56, -122.78],
   zoom: 8
 });
@@ -15,7 +15,7 @@ var map = new mapboxgl.Map({
 
 ## Example
 
-[Interactive example with Mapbox GL.](./example/index.html)
+[Interactive example with Mapbox GL.](https://friedbunny.github.io/mapbox-gl-style-dark/example.html)
 
 This style is meant primarily to be used as a basis for overlays, rather than detailed wayfinding.
 
