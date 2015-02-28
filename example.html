@@ -18,12 +18,15 @@
   mapboxgl.accessToken = 'pk.eyJ1IjoiZnJpZWRidW5ueSIsImEiOiJUbFBmei1zIn0.lZVQjkwWlc07RS4oEQITqg';
   
   var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'dark-v7.json',
-    center: [45.52, -122.681944],
-    zoom: 9,
-    hash: true
+    container: 'map', // container id, see `div` above
+    style: 'dark-v7.json', // stylesheet location, can be local or remote URL
+    center: [45.52, -122.681944], // Portland, Oregon, USA
+    zoom: 9, // initial zoom
+    hash: true // automatically update URL with zoom/lat/lng
   });
+  
+  // Add zoom and rotation controls to the map
+  map.addControl(new mapboxgl.Navigation());
 </script>
 
 </body>
