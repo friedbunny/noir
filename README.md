@@ -21,6 +21,8 @@ var map = new mapboxgl.Map({
 
 This style is meant primarily to be used as a base for overlays, rather than detailed wayfinding.
 
+[Ride App](http://ride.report) rated cycling tracks: http://ride.kulturny.com
+
 ![alt text](example.jpg "Rides overlayed on Portland, Oregon")
 
 ## Label Language
