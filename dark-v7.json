@@ -380,7 +380,7 @@
       }
     }
   }, {
-    "id": "poi_label",
+    "id": "poi_label_1",
     "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
@@ -405,12 +405,12 @@
       "text-size": 11
     }
   }, {
-    "id": "poi_label_1-2",
+    "id": "poi_label_2",
     "type": "symbol",
     "source": "mapbox",
     "source-layer": "poi_label",
     "minzoom": 9,
-    "filter": ["all", ["in", "scalerank", 1, 2], ["==", "$type", "Point"]],
+    "filter": ["all", ["==", "scalerank", 2], ["==", "$type", "Point"]],
     "layout": {
       "icon-image": "{maki}-12",
       "text-field": "@name",
