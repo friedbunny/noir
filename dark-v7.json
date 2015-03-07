@@ -404,5 +404,71 @@
       "text-halo-color": "@label-halo",
       "text-size": 11
     }
+  }, {
+    "id": "poi_label_1-2",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "minzoom": 9,
+    "filter": ["all", ["in", "scalerank", 1, 2], ["==", "$type", "Point"]],
+    "layout": {
+      "icon-image": "{maki}-12",
+      "text-field": "@name",
+      "text-font": "@sans_it",
+      "text-max-size": 12,
+      "text-max-width": 10,
+      "text-offset": [0, 0.6],
+      "text-anchor": "top"
+    },
+    "paint": {
+      "text-color": "@label",
+      "text-halo-color": "@label-halo",
+      "text-size": 10,
+      "text-halo-width": 1
+    }
+  }, {
+    "id": "poi_label_3",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "minzoom": 16,
+    "filter": ["all", ["==", "scalerank", 3], ["==", "$type", "Point"]],
+    "layout": {
+      "icon-image": "{maki}-12",
+      "text-field": "@name",
+      "text-font": "@sans_it",
+      "text-max-size": 10,
+      "text-max-width": 10,
+      "text-offset": [0, 0.6],
+      "text-anchor": "top"
+    },
+    "paint": {
+      "text-color": "@label",
+      "text-halo-color": "@label-halo",
+      "text-size": 9,
+      "text-halo-width": 1
+    }
+  }, {
+    "id": "poi_label_4",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "minzoom": 18,
+    "filter": ["all", ["==", "scalerank", 4], ["==", "$type", "Point"]],
+    "layout": {
+      "icon-image": "{maki}-12",
+      "text-field": "@name",
+      "text-font": "@sans_it",
+      "text-max-size": 9,
+      "text-max-width": 10,
+      "text-offset": [0, 0.6],
+      "text-anchor": "top"
+    },
+    "paint": {
+      "text-color": "@label",
+      "text-halo-color": "@label-halo",
+      "text-size": 8,
+      "text-halo-width": 1
+    }
   }]
 }
