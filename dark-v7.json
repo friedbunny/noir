@@ -459,7 +459,7 @@
       "icon-image": "{maki}-12",
       "text-field": "@name",
       "text-font": "@sans_it",
-      "text-max-size": 9,
+      "text-max-size": 10,
       "text-max-width": 10,
       "text-offset": [0, 0.6],
       "text-anchor": "top"
@@ -467,7 +467,7 @@
     "paint": {
       "text-color": "@label",
       "text-halo-color": "@label-halo",
-      "text-size": 8,
+      "text-size": 9,
       "text-halo-width": 1
     }
   }]
