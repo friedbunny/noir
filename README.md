@@ -6,13 +6,28 @@ For use with some implementation of [Mapbox GL](https://www.mapbox.com/mapbox-gl
 
 Javascript:
 
-```
+```javascript
 var map = new mapboxgl.Map({
   container: 'map', 
   style: 'https://friedbunny.github.io/mapbox-gl-style-dark/dark-v7.json',
   center: [45.56, -122.78],
   zoom: 8
 });
+```
+
+iOS:
+
+```objective-c
+- (void)viewDidLoad {
+  // remember to do init like access token, etc
+
+  NSString *styleJsonPath = [[NSBundle mainBundle] pathForResource:@"styles/dark-v7" ofType:@"json"];
+  NSString *styleJson = [NSString stringWithContentsOfFile:styleJsonPath encoding:NSUTF8StringEncoding error:NULL];
+    
+  self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds styleJSON:styleJson accessToken:accessToken];
+
+  // ... and the rest of your setup
+}
 ```
 
 ## Example
