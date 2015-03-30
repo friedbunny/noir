@@ -2,6 +2,8 @@
 
 For use with some implementation of [Mapbox GL](https://www.mapbox.com/mapbox-gl/), such as [Mapbox GL JS](https://github.com/mapbox/mapbox-gl-js/).
 
+This style is meant primarily to be used as a base for overlays, rather than detailed wayfinding.
+
 ## Usage
 
 Javascript:
@@ -30,13 +32,11 @@ iOS:
 }
 ```
 
-## Example
+## Examples
 
-[Interactive example with Mapbox GL.](https://friedbunny.github.io/mapbox-gl-style-dark/example.html)
+- [Interactive example with Mapbox GL](https://friedbunny.github.io/mapbox-gl-style-dark/example.html)
 
-This style is meant primarily to be used as a base for overlays, rather than detailed wayfinding.
-
-[Ride App](http://ride.report) rated cycling tracks: http://ride.kulturny.com
+- [Ride App](http://ride.report) rated cycling tracks: http://ride.kulturny.com
 
 ![alt text](example.jpg "Rides overlayed on Portland, Oregon")
 
