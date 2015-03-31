@@ -36,9 +36,9 @@ iOS:
 
 - [Interactive example with Mapbox GL](https://friedbunny.github.io/mapbox-gl-style-dark/example.html)
 
-- [Ride App](http://ride.report) rated cycling tracks: http://ride.kulturny.com
+- [Rated cycling tracks](http://ride.kulturny.com) from the ongoing [Ride App](http://ride.report) beta
 
-![alt text](example.jpg "Rides overlayed on Portland, Oregon")
+[![alt text](example.jpg "Rides overlayed on Portland, Oregon")](http://ride.kulturny.com)
 
 ## Label Language
 
