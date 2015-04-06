@@ -1,6 +1,6 @@
 {
   "version": 7,
-  "name": "Dark",
+  "name": "Noir",
   "constants": {
     "@name": "{name}",
     "@sans": "Source Sans Pro Regular, Arial Unicode MS Regular",
@@ -47,7 +47,7 @@
       "maxZoom": 15
     }
   },
-  "sprite": "//friedbunny.github.io/mapbox-gl-style-dark/sprites/dark",
+  "sprite": "//friedbunny.github.io/noir/sprites/noir",
   "glyphs": "mapbox://fontstack/{fontstack}/{range}.pbf",
   "layers": [{
     "id": "background",

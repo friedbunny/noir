@@ -1,6 +1,6 @@
-# Dark Style for Mapbox GL
+# Noir — a Dark Style for Mapbox GL
 
-For use with some implementation of [Mapbox GL](https://www.mapbox.com/mapbox-gl/), such as [Mapbox GL JS](https://github.com/mapbox/mapbox-gl-js/).
+For use with some implementation of [Mapbox GL](https://www.mapbox.com/mapbox-gl/), such as [Mapbox GL JS](https://github.com/mapbox/mapbox-gl-js/) or [Mapbox GL Native](https://github.com/mapbox/mapbox-gl-native/).
 
 This style is meant primarily to be used as a base for overlays, rather than detailed wayfinding.
 
@@ -11,19 +11,19 @@ Javascript:
 ```javascript
 var map = new mapboxgl.Map({
   container: 'map', 
-  style: 'https://friedbunny.github.io/mapbox-gl-style-dark/dark-v7.json',
+  style: 'https://friedbunny.github.io/noir/noir-v7.json',
   center: [45.56, -122.78],
   zoom: 8
 });
 ```
 
-iOS:
+Cocoa:
 
 ```objective-c
 - (void)viewDidLoad {
   // remember to do init like access token, etc
 
-  NSString *styleJsonPath = [[NSBundle mainBundle] pathForResource:@"styles/dark-v7" ofType:@"json"];
+  NSString *styleJsonPath = [[NSBundle mainBundle] pathForResource:@"styles/noir-v7" ofType:@"json"];
   NSString *styleJson = [NSString stringWithContentsOfFile:styleJsonPath encoding:NSUTF8StringEncoding error:NULL];
     
   self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds styleJSON:styleJson accessToken:accessToken];
@@ -34,7 +34,7 @@ iOS:
 
 ## Examples
 
-- [Interactive example with Mapbox GL](https://friedbunny.github.io/mapbox-gl-style-dark/example.html)
+- [Interactive example with Mapbox GL](https://friedbunny.github.io/noir/example.html)
 
 - [Rated cycling tracks](http://ride.kulturny.com) from the ongoing [Ride App](http://ride.report) beta
 
