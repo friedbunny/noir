@@ -17,21 +17,6 @@ var map = new mapboxgl.Map({
 });
 ```
 
-Cocoa:
-
-```objective-c
-- (void)viewDidLoad {
-  // remember to do init like access token, etc
-
-  NSString *styleJsonPath = [[NSBundle mainBundle] pathForResource:@"styles/noir-v7" ofType:@"json"];
-  NSString *styleJson = [NSString stringWithContentsOfFile:styleJsonPath encoding:NSUTF8StringEncoding error:NULL];
-    
-  self.mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds styleJSON:styleJson accessToken:accessToken];
-
-  // ... and the rest of your setup
-}
-```
-
 ## Examples
 
 - [Interactive example with Mapbox GL](https://friedbunny.github.io/noir/example.html)
