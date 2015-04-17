@@ -418,7 +418,7 @@
       "icon-optional": false,
       "text-offset": [0, 0.5],
       "text-field": {
-        "stops": [[1, ""], [15, "@name"]]
+        "stops": [[0, ""], [13.5, "@name"]]
       },
       "text-font": "@sans_it",
       "text-max-size": 11,
@@ -439,10 +439,34 @@
     "source": "mapbox",
     "source-layer": "poi_label",
     "minzoom": 9,
-    "filter": ["all", ["==", "scalerank", 2], ["==", "$type", "Point"]],
+    "filter": ["all", ["==", "scalerank", 2], ["==", "$type", "Point"], ["!in", "maki", "airport", "heliport", "rocket"]],
     "layout": {
       "icon-image": "{maki}-12",
       "text-field": "@name",
+      "text-font": "@sans_it",
+      "text-max-size": 12,
+      "text-max-width": 10,
+      "text-offset": [0, 0.6],
+      "text-anchor": "top"
+    },
+    "paint": {
+      "text-color": "@label",
+      "text-halo-color": "@label-halo",
+      "text-size": 10,
+      "text-halo-width": 1.5
+    }
+  }, {
+    "id": "poi_label_2_airport",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "minzoom": 9,
+    "filter": ["all", ["<=", "scalerank", 2], ["==", "$type", "Point"], ["in", "maki", "airport", "heliport", "rocket"]],
+    "layout": {
+      "icon-image": "{maki}-12",
+      "text-field": {
+        "stops": [[0, ""], [11, "{ref}"], [13, "{name_en}"]]
+      },
       "text-font": "@sans_it",
       "text-max-size": 12,
       "text-max-width": 10,
