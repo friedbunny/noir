@@ -385,17 +385,46 @@
     "source": "mapbox",
     "source-layer": "poi_label",
     "minzoom": 5,
-    "filter": ["all", ["==", "scalerank", 1], ["==", "localrank", 1], ["==", "$type", "Point"]],
+    "filter": ["all", ["==", "scalerank", 1], ["==", "localrank", 1], ["==", "$type", "Point"], ["!=", "maki", "golf"]],
     "layout": {
       "icon-image": "{maki}-12",
       "icon-max-size": 1,
-      "icon-optional": true,
+      "icon-optional": false,
       "text-offset": [0, 0.5],
       "text-field": "@name",
       "text-font": "@sans_it",
       "text-max-size": 11,
       "text-max-width": 8,
-      "text-anchor": "top"
+      "text-anchor": "top",
+      "text-optional": true
+    },
+    "paint": {
+      "icon-size": 1,
+      "text-color": "@label",
+      "text-halo-color": "@label-halo",
+      "text-halo-width": 1.5,
+      "text-size": 11
+    }
+  }, {
+    "id": "poi_label_1_golf",
+    "type": "symbol",
+    "source": "mapbox",
+    "source-layer": "poi_label",
+    "minzoom": 10,
+    "filter": ["all", ["in", "maki", "golf"]],
+    "layout": {
+      "icon-image": "{maki}-12",
+      "icon-max-size": 1,
+      "icon-optional": false,
+      "text-offset": [0, 0.5],
+      "text-field": {
+        "stops": [[1, ""], [15, "@name"]]
+      },
+      "text-font": "@sans_it",
+      "text-max-size": 11,
+      "text-max-width": 8,
+      "text-anchor": "top",
+      "text-optional": true
     },
     "paint": {
       "icon-size": 1,
