@@ -21,8 +21,6 @@ var map = new mapboxgl.Map({
 
 ## Examples
 
-- [Interactive example with Mapbox GL](https://friedbunny.github.io/noir/example.html)
-
 - [Rated cycling tracks](http://ride.kulturny.com) from the [Ride App](http://ride.report) beta
 
 [![alt text](example.jpg "Rides overlaid on Portland, Oregon")](http://ride.kulturny.com)
