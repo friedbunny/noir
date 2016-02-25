@@ -1,5 +1,7 @@
 # Noir — a Dark Style for Mapbox GL
 
+**Warning: This style is rather out of date!**
+
 For use with some implementation of [Mapbox GL](https://www.mapbox.com/mapbox-gl/), such as [Mapbox GL JS](https://github.com/mapbox/mapbox-gl-js/) or [Mapbox GL Native](https://github.com/mapbox/mapbox-gl-native/).
 
 This style is meant primarily to be used as a base for overlays, rather than detailed wayfinding.
